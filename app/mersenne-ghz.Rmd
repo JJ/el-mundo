@@ -1,0 +1,25 @@
+---
+title: "UGRinvestiga"
+author: "JJ Merelo"
+date: "21/06/2015"
+output: html_document
+---
+
+#Top 500 Great Internet Mersenne Prime Search
+
+```{r setup, echo=FALSE}
+library(XML)
+library(ggplot2)
+theurl <- "http://www.mersenne.org/report_top_500/"
+tables <- readHTMLTable(theurl)
+top.producers <- data.frame(Rank=as.numeric(as.character(tables$report1$'Rank')), Member=tables$report1$'Member Name',GHzD=as.numeric(as.character(tables$report1$'Total GHz Days')))
+```
+
+The  [Top 500 of GIMPS users](http://www.mersenne.org/report_top_500/) is updated every month. Users lend computing power to the computation of [Mersenne primes using the Prime95 program](https://en.wikipedia.org/wiki/Prime95)
+
+As is usual in volunteer computing environments, there is a Zipf-like distribution, although it is not exactly a power law
+
+```{r, echo=FALSE}
+ggplot(data=top.producers,aes(x=Rank,y=GHzD))+geom_point()+scale_y_log10()
+```
+
