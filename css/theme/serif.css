@@ -277,5 +277,10 @@ body {
        padding: 20px;
        border-radius: 30px}
 
+
+.clearbkg { background-color:rgba(250,250,250,0.7);
+            padding: 20px;
+            border-radius: 30px}
+
 .reveal li { font-size:1.75em }
 .reveal li.credits { font-size:0.9em }
