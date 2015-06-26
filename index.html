@@ -378,7 +378,7 @@ alt='Javascript'>
 			      <aside class='notes'>Los ordenadores
 			      actuales tienen, aparte de la CPU, GPU y
 			      otros menos reconocidos: el procesador
-			      de red, por ejemplo. También la
+			      de red (NIC), por ejemplo. También la
 			      infraestructura de red tiene capacidad
 				de procesamiento.</aside>
 
@@ -399,6 +399,14 @@ alt='Javascript'>
 			    <section data-background='img/parasite.png'>
 			      <aside class='notes'>Imagen tomada de la presentación en <a href='http://www.nd.edu/~parasite'>en Parasitic computing</a></aside>
 
+			      <aside class='notes'>Barabasi habla de
+			      "descubrimiento" y de que este tipo de
+			      marcos borra la línea entre
+			      comunicaciones y computación, haciendo
+			      las dos de la misma forma. Y es curioso
+			      cómo se empieza a explotar toda esa
+			      infraestructura, aunque para el
+				bien. Pero no duraría mucho.</aside>
 			    </section>
 
 			  </section><!-- /Parasitic computing -->
@@ -409,15 +417,19 @@ alt='Javascript'>
 			    </section>
 
 			    <section data-background='https://farm4.staticflickr.com/3192/2905817600_ccd412feb1_b_d.jpg' alt='graffiti rat' title='I smell rat'>
-			      <aside class='notes'>Bagle fue uno de
+			      <aside class='notes'><a href='https://en.wikipedia.org/wiki/Bagle_%28computer_worm%29'>Bagle</a> fue uno de
 			      los primeros virus que instaló un Remote
 			      Administration tool; un RAT que servía
 			      para enviar órdenes a los ordenadores
 				infectados o <em>zombies</em> y que
-				formaban una <em>botnet</em></aside>
+				formaban una <em>botnet</em>. De la
+			      wikipedia:
+				<blockquote>The Bagle botnet consists of an estimated 150,000-230,000 [4] computers infected with the Bagle Computer worm. It was estimated that the botnet was responsible for about 10.39% of the worldwide spam volume on December 29, 2009, with a surge up to 14% on New Year's Day </blockquote></aside>
 			    </section>
 
-			    <section title='botnets'>
+			    <section title='botnets'
+			      data-background='https://farm3.staticflickr.com/2891/11589927854_97dd3a6f3a_b_d.jpg'
+			      alt='bots'>
 			      <aside class='notes'>Desde entonces, las
 			      botnets han evolucionado hasta
 			      convertirse en herramientas de
@@ -425,10 +437,12 @@ alt='Javascript'>
 			      de cometidos, desde enviar spam (lo que
 			      se hacía orignalmente) hasta la
 			      extorsión a base de ataques de
-				denegación de servicio</aside>
+				denegación de servicio.</aside>
 			    </section>
 
 			    <section title='i+d'>
+			      <h1>Del correo basura a los APT</h1>
+
 			      <aside class='notes'>Hay todo tipo de
 			      técnicas que se usan para evitar
 			      detección y desmantelamiento, desde
@@ -440,6 +454,18 @@ alt='Javascript'>
 			      cientos de miles de ordenadores. Todos
 				con Windows, claro.</aside>
 
+			    </section>
+
+			    <section title='koobface' data-background='http://blog.trendmicro.com/trendlabs-security-intelligence/files/2009/07/twitter.JPG'>
+			      <aside class='notes'><a href='https://en.wikipedia.org/wiki/Koobface'>Koobface</a>
+			      es uno de los virus más sofisticados
+			      tanto en su funcionamiento (red P2P de
+			      CandC) como en su dispersión (usando
+			      redes sociales). Una vez más, el
+			      componente social es esencial para
+			      predecir y optimizar la capacidad
+			      computacional de una metacomputadora
+				efímera. </aside>
 			    </section>
 
 			  </section><!-- /Botnets -->
@@ -457,7 +483,23 @@ alt='Javascript'>
 
 			    </section>
 
-			    <section title='asignación de crédito'>
+			    <section title='asignación de crédito'
+			      data-background='https://farm3.staticflickr.com/2777/4538281614_36ff544e66_o_d.png'>
+			      <aside class='notes'>
+
+				<aside class='notes'>SETI@home fue
+				pionero en la "gamificación", aunque
+				todavía no se llamaba así: tratar de
+				hacer competiciones y ránkings para
+				que la gente se picara y aportara
+				ciclos. Funcionó bastante bien, entre
+				  empresas, por ejemplo. Pero </aside>
+			    </section>
+
+			    <section>
+			      <h1>Las prestaciones dependen del
+				<em>espíritu animal</em></h1>
+			      <h2 class='fragment'>*Yawn*</h2>
 			    </section>
 
 			    <section title='vulnerabilidad a fraude'>
@@ -465,10 +507,6 @@ alt='Javascript'>
 			      F. G. Sarmenta. <em>Sabotage-Tolerance
 			      Mechanisms for Volunteer Computing
 				  Systems.</em>, FGCS, Vol. 18, #4, March'02:</h2>
-			    </section>
-
-			    <section>
-			      <h1>Las prestaciones dependen del comportamiento.</h1>
 			    </section>
 
 			  </section><!-- /SETI@home -->
@@ -556,15 +594,19 @@ alt='Javascript'>
 			  </section>
 
 			  <section title='publish or perish'>
-			    <h1>Comprender la dinámica del sistema
-			    sociotécnico.</h1>
+			    <h1>Comprender la dinámica.</h1>
 			    <h2 class='fragment'>Predecir corto-medio
 			      plazo sus prestaciones.</h2>
 			  </section>
 
 			  <section>
-			    <h1>Adaptar los algoritmos a sistemas de
+			    <h1>Algoritmos ⇨ sistemas de
 			      computación efímera.</h1>
+
+			    <aside class='notes'>Esta adaptación es
+			    fundamental, porque hay que dividir,
+			    auto-adaptar, insertar tolerancia a
+			      fallos, seguridad y otros muchos temas.</aside>
 			  </section>
 
 			  <section>
@@ -612,10 +654,21 @@ alt='Javascript'>
 				    Hendry
 				    <code>flic.kr/p/5omH5r</code></a></li>
 				    
-				    <li class='credits'>Habas de <a href='https://www.flickr.com/photos/cookbookman/5535638066/'>Cookbookman17</a></li>
+				    <li class='credits'>Habas
+				    de <a href='https://www.flickr.com/photos/cookbookman/5535638066/'>Cookbookman17</a></li>
+
+				    <li class='credits'>Roborata
+				    de <a href='https://www.flickr.com/photos/the-magic-tuba-pixie/11589927854/'>The
+					Magic Tuba Pixie</a></li>
 
 				    <li class='credits'>Crowd from <a href='https://flic.kr/p/8NDCRh'>Adriaan Bloem <code>flic.kr/p/8NDCRh</code></a></li>
 
+				    <li class='credits'>Twitter para
+				      Koobface
+				      de <a href='http://blog.trendmicro.com/trendlabs-security-intelligence/koobface-increases-twitter-activity/'>Trendmicro</a></li>
+
+				    <li class='credits'>Diploma de
+				      quien pone, claro</li>
 				  </ul>
 			  </section>
 
